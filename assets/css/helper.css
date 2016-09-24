@@ -1,0 +1,19 @@
+/* Color */
+.text-black {
+  color: #222;
+}
+
+.text-white {
+  color: white;
+}
+
+/* Backgrounds */
+.bg-green {
+  background-color: #80cc97;
+  color: white !important;
+}
+
+/* Utilidades */
+.full-width {
+  width: 100%;
+}

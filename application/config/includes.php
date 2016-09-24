@@ -18,6 +18,7 @@ $config['cssIncludes'] = array(
   'waitMe',
   'utility',
   'app',
+  'helper',
 );
 $config['cssIncludesPrint'] = array(
 

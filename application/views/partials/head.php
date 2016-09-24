@@ -19,3 +19,35 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
   </head>
   <body>
+    <div class="row nav-top">
+      <nav class="row navbar">
+        <ul class="navbar-list three columns">
+          <li class="navbar-item">
+            <a class="navbar-link bg-green" href="#" title="<?= $this->config->item('nome_sistema'); ?>">S</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" title="Solicitações de Amizade">
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" title="Mensagens">
+              <i class="fa fa-comments-o" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" title="Notificações">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-list six columns no-hover">
+          <li class="navbar-item text-black full-width nav-nomeusuario no-border no-hover">Eliseu dos Santos</li>
+        </ul>
+        <ul class="navbar-list three columns">
+          <li class="navbar-item full-width busca-geral">
+            <input type="text" placeholder="Busca Geral" value="">
+          </li>
+        </ul>
+      </nav>
+    </div>
