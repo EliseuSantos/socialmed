@@ -12,3 +12,8 @@
   background-color: #80cc97;
   color: white !important;
 }
+
+/* Utilidades */
+.full-width {
+  width: 100%;
+}

@@ -43,7 +43,7 @@ h3 {
 }
 
 .navbar {
-  display: block;
+  display: flex;
   width: 100%;
   height: 6.5rem;
   background: #fffbf5;
@@ -58,7 +58,7 @@ h3 {
   font-size: 22px;
   cursor: pointer;
   color: #8e8e8e !important;
-  margin: 13px 20px;
+  margin: 16px 18px;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -67,7 +67,7 @@ h3 {
   padding-left: 1px;
 } 
 
-.navbar-link:hover {
+.navbar-link:not(.no-hover):hover {
   box-shadow: 0 0 0 1px rgb(128, 204, 151);
 }
 
@@ -75,7 +75,7 @@ li.navbar-item:nth-child(1) .navbar-link {
   box-shadow: none !important;
 }
 
-li.navbar-item:nth-child(1) {
+li.navbar-item:nth-child(1):not(.no-border) {
   font-weight: bold;
   border-right: 1px solid #e2e2e2;
 }
@@ -84,7 +84,7 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
   color: #80cc97 !important;
 }
 
-.navbar-item:hover {
+.navbar-item:not(.no-hover):hover {
   background-color: #f7f7f7; 
 }
 
@@ -99,6 +99,11 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
   list-style: none;
   height: 6.5rem;
   margin-bottom: 0;
+}
+
+.nav-nomeusuario, .busca-geral {
+  line-height: 3;
+  text-align: center;
 }
 
 .nav-atividades {
@@ -121,4 +126,16 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
 .perfil {
   background-color: #80cc97;
   height: 100%;
+}
+
+.info-perfil {
+  height: 300px;
+  text-align: center;
+}
+
+.info-perfil img {
+  border-radius: 50%;
+  text-align: center;
+  margin: 70px auto;
+  width: 110px;
 }
