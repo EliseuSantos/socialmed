@@ -26,6 +26,16 @@ body {
   color: white;
 }
 
+a {
+  color: #222 !important;
+  text-decoration: none;
+}
+
+a:hover, a:visited, 
+a:link, a:active {
+  text-decoration: none;
+}
+
 h3 {
     font-size: 25px;
     font-weight: 600;
@@ -43,15 +53,26 @@ h3 {
 }
 
 .navbar-link {
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: .2rem;
-  margin-right: 35px;
-  text-decoration: none;
-  line-height: 6.5rem;
-  color: #222;
+  box-shadow: 0 0 0 1px #222;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 13px 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  padding-left: 1px;
 } 
+
+.navbar-link:hover {
+  box-shadow: 0 0 0 1px rgb(128, 204, 151);
+}
+
+li.navbar-item:nth-child(1) {
+  border-right: 1px solid #e2e2e2;
+}
 
 .navbar-link:hover {
   color: #80cc97 !important;
