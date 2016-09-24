@@ -10,7 +10,7 @@ class Home extends MY_Controller {
     $this->loadHead();
     $this->loadHeaderMenu();
     $this->load->view('home');
-    $this->loadScripts();
     $this->loadFoot();
+    $this->loadScripts();
   }
 }
