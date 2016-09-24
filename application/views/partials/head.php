@@ -23,9 +23,23 @@
       <nav class="navbar">
       <ul class="navbar-list">
         <li class="navbar-item">
-          <a class="navbar-link" href="#intro" title="<?= $this->config->item('nome_sistema'); ?>">S</i></a>
+          <a class="navbar-link bg-green" href="#" title="<?= $this->config->item('nome_sistema'); ?>">S</a>
         </li>
-        <li class="navbar-item"><a class="navbar-link" href="#intro"><i class="fa fa-user-secret" aria-hidden="true"></i></a></li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#" title="Solicitações de Amizade">
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#" title="Mensagens">
+            <i class="fa fa-comments-o" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#" title="Notificações">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </a>
+        </li>
       </ul>
     </nav>
     </div>

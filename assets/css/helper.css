@@ -1,7 +1,14 @@
+/* Color */
 .text-black {
   color: #222;
 }
 
 .text-white {
-  color: black;
+  color: white;
+}
+
+/* Backgrounds */
+.bg-green {
+  background-color: #80cc97;
+  color: white !important;
 }

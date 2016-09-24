@@ -53,10 +53,11 @@ h3 {
 }
 
 .navbar-link {
-  box-shadow: 0 0 0 1px #222;
+  box-shadow: 0 0 0 1px #aeaba5;
   display: inline-block;
   font-size: 22px;
   cursor: pointer;
+  color: #8e8e8e !important;
   margin: 13px 20px;
   width: 35px;
   height: 35px;
@@ -70,22 +71,33 @@ h3 {
   box-shadow: 0 0 0 1px rgb(128, 204, 151);
 }
 
+li.navbar-item:nth-child(1) .navbar-link {
+  box-shadow: none !important;
+}
+
 li.navbar-item:nth-child(1) {
+  font-weight: bold;
   border-right: 1px solid #e2e2e2;
 }
 
-.navbar-link:hover {
+li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
   color: #80cc97 !important;
+}
+
+.navbar-item:hover {
+  background-color: #f7f7f7; 
 }
 
 .navbar-item {
   position: relative;
   float: left;
+  height: 100%;
   margin-bottom: 0;
 }
 
 .navbar-list {
   list-style: none;
+  height: 6.5rem;
   margin-bottom: 0;
 }
 
