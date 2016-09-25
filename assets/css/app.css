@@ -21,7 +21,7 @@ body {
   margin: 0;
   overflow: hidden;
   background-color: #eee;
-  font-size: 20px;
+  font-size: 16px;
   height: 100vh;
   color: white;
 }
@@ -135,7 +135,7 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
 }
 
 .nav-nomeusuario, .busca-geral {
-  line-height: 3;
+  line-height: 4;
   text-align: center;
 }
 
@@ -173,7 +173,7 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
   border-radius: 50%;
   text-align: center;
   margin-top: 20px;
-  width: 110px;
+  width: 95px;
 }
 
 .margin-bottom-0 {
@@ -200,7 +200,8 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
 }
 
 .fotos-perfil ul li img {
-  width: 59px;
+  width: 80px;
+  height: 61px;
 }
 
 .sobre-perfil{
@@ -213,7 +214,7 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
 }
 
 .sobre-perfil ul li {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .nav-tabs-post {
@@ -336,4 +337,37 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
+}
+
+.lista-sugestoes,
+.lista-solicitacoes,
+.lista-artigos {
+  padding: 10px;
+}
+
+.lista-artigos button {
+  float: left;
+  width: 100%;
+}
+
+.img-small {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+  float: left;
+}
+
+.titulo-widget {
+  display: inline-block;
+  width: 100%;
+  font-size: 17px;
+}
+
+.count-amigos-emcomum {
+  font-size: 10px;
+}
+
+.count-visualiza-artigo {
+  font-size: 10px;
 }

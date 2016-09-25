@@ -17,3 +17,29 @@
 .full-width {
   width: 100%;
 }
+
+.border-bottom {
+  border-bottom: 1px solid #6cb181;
+  padding-bottom: 2px;
+}
+
+.border-bottom-atividades {
+  border-bottom: 1px solid #eae6e0;
+  padding-bottom: 2px;
+}
+
+.btn-small {
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 30px
+}
+
+.btn-small:hover {
+  color: #222 !important;
+}
+
+.small-text {
+  font-size: 10px;
+  display: block;
+}
