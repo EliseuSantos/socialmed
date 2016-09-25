@@ -35,5 +35,5 @@
       </ul>
     </div>
   </div>
-  <div class="six columns">
+  <div class="six columns conteudo-geral">
     <div class="lista-atividades">

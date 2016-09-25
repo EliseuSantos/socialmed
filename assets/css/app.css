@@ -17,12 +17,36 @@
   src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(http://fonts.gstatic.com/s/raleway/v11/xkvoNo9fC8O2RDydKj12by3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
 }
 
+::-webkit-scrollbar-button {
+  display: block;
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: rgba(0,0,0,.15);
+  border-radius: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(179, 181, 182, 0.83);
+  border-radius: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background: 0 0;
+}
+
 body {
   margin: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-color: #eee;
   font-size: 16px;
-  height: 100vh;
   color: white;
 }
 
@@ -41,9 +65,9 @@ a:link, a:active {
 }
 
 h3 {
-    font-size: 25px;
-    font-weight: 600;
-    color: white;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
 }
 
 .button.button-success, 
@@ -77,6 +101,7 @@ input[type="button"].button-success:hover {
 
 .navbar {
   display: flex;
+  overflow: hidden;
   width: 100%;
   height: 6.5rem;
   background: #fffbf5;
@@ -140,8 +165,11 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
 }
 
 .nav-atividades {
-  background: #fffbf5;
+  position: fixed;
+  right: 0;
   height: 100%;
+  top: 67px;
+  background: #fffbf5;
 }
 
 .lista-atividades {
@@ -152,13 +180,27 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
   max-width: 1060px !important;
 }
 
-.row.content-profile {
-  height: calc(100% - 56px);
+.row.content-profile {}
+
+.conteudo-geral {
+  position: fixed;
+  left: 21.6%;
+  height: calc(90% - 5px);
+  top: 67px;
+  width: 56.2% !important;
+  overflow: auto;
+  padding: 10px;
+  margin-left: 0;
 }
 
 .perfil {
   background-color: #80cc97;
-  height: 100%;
+  position: fixed;
+  top: 67px;
+}
+
+.sobre-perfil ul li strong {
+  color: #538c64;
 }
 
 .info-perfil {
@@ -178,6 +220,13 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
 
 .margin-bottom-0 {
   margin-bottom: 0;
+}
+
+.content-nav-atividades {
+  overflow: scroll;
+  max-height: 92%;
+  position: relative;
+  display: block;
 }
 
 .profissao {
@@ -219,6 +268,12 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
 
 .nav-tabs-post {
   border-bottom: none;
+}
+
+.nav-top {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
 }
 
 .nav-post {
@@ -294,9 +349,9 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
 }
 
 .novo-post {
-  height: 124px;
   background-color: white;
   opacity: 1;
+  margin-bottom: 10px;
   border-radius: 2px;
   border-color: rgba(22,24,27,.12);
   border: none;
@@ -341,8 +396,15 @@ li.navbar-item:not(:nth-child(1)) .navbar-link:hover {
 
 .lista-sugestoes,
 .lista-solicitacoes,
+.lista-aniversariantes,
 .lista-artigos {
   padding: 10px;
+}
+
+.lista-aniversariantes li {
+  background-color: #e3f7e9;
+  padding: 5px;
+  color: #3d7344;
 }
 
 .lista-artigos button {

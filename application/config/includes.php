@@ -36,5 +36,5 @@ $config['jsIncludes'] = array(
   'class/client-websocket',
   'triggersWebsocket',
   'global',
-  'customEvents'
+  'customEvents',
 );
